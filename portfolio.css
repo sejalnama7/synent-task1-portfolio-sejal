@@ -76,7 +76,7 @@ nav a:hover{
     white-space: nowrap;
     display: inline-flex;
     width: 0;
-    animation: typing 3s steps(50) forwards infinite;
+    animation: typing 5s steps(50) forwards infinite;
     color: rgb(202, 210, 197);
 }
 @keyframes typing{
@@ -320,12 +320,14 @@ nav a:hover{
 }
 
 .contact-content a{
-    color: rgb(202, 210, 197);
+    color: rgb(157, 243, 249);
     margin-right: 100px;
     font-size: 15px;
+    text-decoration: none;
 }
 .contact-content a:hover{
     color: beige;
+    text-decoration: underline;
 }
 
 .right{
