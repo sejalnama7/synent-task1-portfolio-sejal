@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
     
 }
 header{
@@ -13,20 +14,22 @@ body{
     background-color:  #121b30;
     color: rgb(241, 245, 241);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
 }
 
+body,html{
+    overflow-x: hidden;
+}
 nav{
     width: 100%;
+    margin: 0;
     background-color: #69acae;
     padding: 1px;
-    text-align: right;
        
 }
 nav a{
     text-decoration: none;
     color: rgb(1, 22, 30);
-    margin-right: 100px;
+    margin-right: 70px;
     font-size: 13px;
     text-align: center;
     position: relative;
@@ -48,7 +51,7 @@ nav a:hover{
     align-items: center;
     height: 100vh;
     justify-content: space-between;
-    padding: 50px;
+    padding: 20px;
     margin-top:70px;
     height: auto;
 }
@@ -76,7 +79,7 @@ nav a:hover{
     white-space: nowrap;
     display: inline-flex;
     width: 0;
-    animation: typing 5s steps(50) forwards infinite;
+    animation: typing 3s steps(50) forwards infinite;
     color: rgb(202, 210, 197);
 }
 @keyframes typing{
@@ -127,18 +130,19 @@ nav a:hover{
 .about-content{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 80px;
+    gap: 3%;
     margin-top: 50px;
+    margin-left: 9%;
+    
 }
 
 .text-content{
     height: 300px;
-    width: 750px;
-    padding-left: 100px;
+    width: 65%;
+    padding-left: 70px;
     padding-top: 20px; 
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 40px;
     background: linear-gradient(135deg, #1e293b);
     color: white;
@@ -162,11 +166,11 @@ nav a:hover{
 }
 .edu-info{
     height: 300px;
-    width: 300px;
+    width: 25%;
     background-color: rgb(53, 79, 82);
     padding-top: 20px;
     padding-left: 60px;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 40px;
     border-radius: 10px;
     background: linear-gradient(135deg, #1e293b);
@@ -188,19 +192,19 @@ nav a:hover{
 .skill-content{
     margin-top: 40px;
     padding-left: 50px;
-    margin-left: 70px;
 }
 .skill-content h2{
     padding-top: 30px;
-    margin-left: 450px;
+    text-align: center;
     text-decoration: underline 2px solid #00bcd4;
 }
 .forbg{
-    height: 450px;
-    width:1000px;
+    margin-left: 5%;
+    height: 400px;
+    width: 88%;
     margin-top: 40px;
     border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: linear-gradient(135deg, #1e293b);
     color: white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
@@ -244,11 +248,12 @@ nav a:hover{
     padding-left: 20px;
 }
 .forbg2{
+    margin-left: 5%;
     background-color: rgb(53, 79, 82);
     height: 350px;
-    width:1000px;
+    width:88%;
     margin-top: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     background: linear-gradient(135deg, #1e293b);
     color: white;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
@@ -301,7 +306,6 @@ nav a:hover{
     width: 500px;
 }
 .contact-content{
-    padding-left: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -311,12 +315,12 @@ nav a:hover{
 #contact-title{
     border-left: 4px solid #00bcd4;
     padding-left: 10px;
-    margin-top: 150px;
-    margin-left: 70px;
+    margin-top: 10%;
+    margin-left: 10%;
 }
 .contact-content p{
     padding-top: 10px;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 .contact-content a{
@@ -383,4 +387,114 @@ footer p{
     text-align: center;
     font-size: 10px;
     margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-flex;
+        margin: 10px;
+        font-size: 12px;
+    }
+
+    .logo img {
+        margin-right: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    #animation{
+        font-size: 15px;
+        display: block;
+        margin-top: 2%;
+    }
+    #bca{
+        font-size: 12px;
+    }
+    .text {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image img {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .edu-info {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .skill-content {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .skill-content h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .forbg, .forbg2 {
+        width: 95%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .tech-skills {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .skill-box {
+        width: 95%;
+    }
+    
+    .soft-skill-box {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .soft-skill-box li {
+        width: 95%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-box img {
+        width: 300px;
+    }
+
+    .right {
+        margin: 0;
+        padding: 20px;
+    }
 }
